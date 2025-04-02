@@ -1,0 +1,146 @@
+/* 全局样式 */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #242424;
+}
+
+/* 容器 */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    /*background: rgb(255, 255, 255)*/;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 让 main 自动扩展，占据剩余空间 */
+main {
+    flex: 1;
+}
+
+/* 头部 */
+header {
+    background: #001926;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+header p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 文章列表 */
+.blog-posts {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+article {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+article h2 {
+    margin: 0;
+}
+article a {
+    text-decoration: none;
+    color: #011730;
+}
+article a:hover {
+    text-decoration: underline;
+}
+article .meta {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 页脚始终固定在底部 */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-info h2 {
+    color: #011730;
+}
+.contact-info a {
+    font-size: 18px;
+    color: #011730;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.personal-introduction {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.personal-introduction h2 {
+    color: #001926;
+}
+
+.personal-introduction p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+pre {
+    background: #e4e4e4;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 16px;
+    text-align: left; /* 代码块内部文本不要居中 */
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
